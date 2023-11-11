@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paquetes</title>
+  <link rel="stylesheet" href="Style M.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-icons left">
+      <div class="icon-placeholder" id="toggleDropdown"></div>
+      <div class="icon-placeholder"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <div class="dropdown" id="dropdownMenu">
+        <a href="Recibos.html" class="dropdown-item">RECIBOS</a>
+        <a href="Paquetes.html" class="dropdown-item">PAQUETE</a>
+        <a href="Historial.html" class="dropdown-item">HISTORIAL</a>
+        <a href="Soporte.html" class="dropdown-item">SOPORTE</a>
+        <a href="Contacto.html" class="dropdown-item">CONTACTO</a>
+      </div>
+
+    <h1 class="page-title">PAQUETES</h1>
+    <div class="header-icons right">
+      <div class="icon-placeholder"></div>
+      <div class="icon-placeholder"></div>
+    </div>
+
+  </header>
+  <script>
+    document.getElementById('toggleDropdown').addEventListener('click', function() {
+      var dropdown = document.getElementById('dropdownMenu');
+      if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+        dropdown.style.display = 'block';
+      } else {
+        dropdown.style.display = 'none';
+      }
+    });
+    
+  </script>
+  <div class="rectangle-container">
+    <div class="half"></div>
+    <div class="half"></div>
+</div>
+
+  </body>
+  </html>

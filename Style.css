@@ -1,0 +1,87 @@
+body {
+    height: 100%;
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .center-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 50px; 
+    font-weight: bold;
+  }
+  .signin-container {
+    margin-top: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .signin-container input[type="text"],
+  .signin-container input[type="password"] {
+    width: 50%; 
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .signin-container button {
+    width: 10%; 
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .signin-container button:hover {
+    background-color: #555;
+  }
+  
+  .forgot-password {
+    margin-top: 15px;
+    color: #0000EE;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .login-with {
+    margin-top: 40px; 
+    text-align: center;
+  }
+  
+  .with {
+    display: block;
+    font-size: 24px; 
+    margin-bottom: 20px;
+  }
+  
+  .social-logins {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+  }
+  
+  .social-button {
+    font-size: 24px; 
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .social-button.fb { background-color: #3b5998; color: white; }
+  .social-button.google { background-color: #db4437; color: white; }
+  .social-button.apple { background-color: #a6a6a6; color: white; }
+  
+  .social-button:hover {
+    opacity: 0.9;
+  }
+  

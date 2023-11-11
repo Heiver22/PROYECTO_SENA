@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recibos</title>
+  <link rel="stylesheet" href="Style M.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-icons left">
+      <div class="icon-placeholder" id="toggleDropdown"></div>
+      <div class="icon-placeholder"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <div class="dropdown" id="dropdownMenu">
+        <a href="Recibos.html" class="dropdown-item">RECIBOS</a>
+        <a href="Paquetes.html" class="dropdown-item">PAQUETE</a>
+        <a href="Historial.html" class="dropdown-item">HISTORIAL</a>
+        <a href="Soporte.html" class="dropdown-item">SOPORTE</a>
+        <a href="Contacto.html" class="dropdown-item">CONTACTO</a>
+      </div>
+
+    <h1 class="page-title">RECIBOS</h1>
+    <div class="header-icons right">
+      <div class="icon-placeholder"></div>
+      <div class="icon-placeholder"></div>
+    </div>
+  </header>
+  <script>/*Menu desplegable*/
+    document.getElementById('toggleDropdown').addEventListener('click', function() {
+      var dropdown = document.getElementById('dropdownMenu');
+      if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+        dropdown.style.display = 'block';
+      } else {
+        dropdown.style.display = 'none';
+      }
+    });
+  </script><!--Ventana Emergente -->
+ <div class="buttons-container">
+    <button id="boton1" class="square-button">Botón 1</button>
+    <button id="boton2" class="square-button">Botón 2</button>
+    <button id="boton3" class="square-button">Botón 3</button>
+    <button id="boton4" class="square-button">Botón 4</button>
+</div>
+<div id="ventana1" class="ventana" style="display:none;">
+</div>
+<div id="ventana2" class="ventana" style="display:none;">
+</div>
+<div id="ventana3" class="ventana" style="display:none;">
+</div>
+<div id="ventana4" class="ventana" style="display:none;">
+</div>
+<script>
+    document.getElementById('boton1').addEventListener('click', function() {
+        toggleVentana('ventana1');
+    });
+    document.getElementById('boton2').addEventListener('click', function() {
+        toggleVentana('ventana2');
+    });
+    document.getElementById('boton3').addEventListener('click', function() {
+        toggleVentana('ventana3');
+    });
+    document.getElementById('boton4').addEventListener('click', function() {
+        toggleVentana('ventana4');
+    });
+
+    function toggleVentana(ventanaId) {
+        var todasLasVentanas = document.querySelectorAll('.ventana');
+        todasLasVentanas.forEach(function(ventana) {
+            if(ventana.id !== ventanaId) {
+                ventana.style.display = 'none';
+            }
+        });
+
+        var ventana = document.getElementById(ventanaId);
+        if (ventana.style.display === 'none' || ventana.style.display === '') {
+            ventana.style.display = 'block';
+        } else {
+            ventana.style.display = 'none';
+        }
+    }
+    </script>
+</div>
+</body>
+</html>
