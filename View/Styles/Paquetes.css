@@ -1,0 +1,15 @@
+.rectangle-container {
+    width: 600px; 
+    height: 500px; 
+    border: 2px solid black; 
+    display: flex;
+    margin-left: 350px;
+  }
+  .half {
+    width: 50%; 
+    height: 100%; 
+    border-right: 1px solid black; 
+  }
+  .rectangle-container .half:last-child {
+    border-right: none;
+  }
