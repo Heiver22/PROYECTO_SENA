@@ -4,33 +4,47 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Smart Locker</title>
-<link rel="stylesheet" href="../Styles/Style.css">
+<link rel="stylesheet" href="../Styles/Registro_arrendatario.css">
 </head>
 <body>
 
 <div class="center-screen">
-  <div class="title">SMART LOCKER</div>
+  <div class="title">logo app</div>
 </div>
 <form action="menu.html">
-<div class="signin-container">
-  <input type="text" placeholder="Cedula" />
-  <input type="text" placeholder="Nombres" />
-  <input type="text" placeholder="Apellidos" />
-  <input type="text" placeholder="Telefono" />
-  <input type="text" placeholder="Cedula Propietario" />
-  <input type="password" placeholder="Password" />
-  <button type="submit">registro</button>
-  
-</div>
-</form>
-<div class="login-with">
-  <span class="with">WITH</span>
-  <div class="social-logins">
-    <img src="../Source/facebook-icon.webp" alt="google-icon" width="26" height="26">
-    <img src="../Source/apple-icon.png" alt="google-icon" width="28" height="28">
-    <img src="../Source/google2-icon.png" alt="google-icon" width="25" height="25">
+  <div class="signin-container">
+    <h1>Registro Arrendatario</h1>
+    <label for="cedula">Cedula:</label>
+    <input type="text" placeholder="Cedula" required />
+
+    <label for="nombres">Nombres :</label>
+    <input type="text" placeholder="Nombres" required />
+
+    <label for="apellidos">Apellidos:</label>
+    <input type="text" placeholder="Apellidos" required />
+
+    <label for="telefono">Telefono:</label>
+    <input type="text" placeholder="Telefono" required />
+
+    <label for="cedula_propietario">Cedula Propietario:</label>
+    <input type="text" placeholder="Cedula Propietario" required />
+
+    <label for="clave">Clave:</label>
+    <input type="password" placeholder="Clave" required />
+
+    <button type="submit">Registro</button>
+
+    <div class="login-with">
+      <span class="with">or</span>
+      <div class="social-logins">
+        <img src="../Source/facebook-icon.webp" alt="facebook-icon" width="26" height="26">
+        <img src="../Source/apple-icon.png" alt="apple-icon" width="28" height="28">
+        <img src="../Source/google2-icon.png" alt="google-icon" width="25" height="25">
+      </div>
+    </div>
   </div>
-</div>
+</form>
 
 </body>
 </html>
+
