@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menú de la App</title>
   <link rel="stylesheet" href="../Styles/Menubar.css">
 </head>
+
 <body>
+  <div class="main-container">
   <header class="app-header">
     <div class="header-icons left">
-      <div class="icon-placeholder" id="toggleDropdown"></div>
+      <img src="../Source/menu-hamburguesa.png" alt="menu-icon" class="icon-placeholder" id="toggleDropdown">
       <a href="Menu.html">
-        <div class="icon-placeholder"></div>
-    </a>      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
+        <img src="../Source/hogar.png" alt="home-icon" class="icon-placeholder">
+      </a>
+      
     </div>
     <div class="dropdown" id="dropdownMenu">
-        <a href="Recibos.html" class="dropdown-item">RECIBOS</a>
-        <a href="Paquetes.html" class="dropdown-item">PAQUETE</a>
-        <a href="Historial.html" class="dropdown-item">HISTORIAL</a>
-        <a href="Soporte.html" class="dropdown-item">SOPORTE</a>
-        <a href="Contacto.html" class="dropdown-item">CONTACTO</a>
-      </div>
+      <a href="Recibos.html" class="dropdown-item">RECIBOS</a>
+      <a href="Paquetes.html" class="dropdown-item">PAQUETE</a>
+      <a href="Historial.html" class="dropdown-item">HISTORIAL</a>
+      <a href="Soporte.html" class="dropdown-item">SOPORTE</a>
+      <a href="Contacto.html" class="dropdown-item">CONTACTO</a>
+    </div>
 
     <h1 class="page-title">ANUNCIOS</h1>
     <div class="header-icons right">
-      <div class="icon-placeholder"></div>
-      <div class="icon-placeholder"></div>  
+      <img src="../Source/sonido-de-timbre.png" alt="bell-icon" class="icon-placeholder">
+      <img src="../Source/usuario.png" alt="user-icon" class="icon-placeholder">
     </div>
   </header>
   <section class="content-container">
@@ -39,5 +41,7 @@
     </div>
   </section>
   <script src="../../Model/MenuDesplegable.js"></script>
+</div>
 </body>
+
 </html>
