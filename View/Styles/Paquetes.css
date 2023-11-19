@@ -1,14 +1,14 @@
 .rectangle-container {
     width: 600px; 
     height: 500px; 
-    border: 2px solid black; 
+    border: 2px solid rgb(0, 0, 0); 
     display: flex;
     margin-left: 350px;
   }
   .half {
     width: 50%; 
     height: 100%; 
-    border-right: 1px solid black; 
+    border-right: 1px solid rgb(0, 0, 0); 
   }
   .rectangle-container .half:last-child {
     border-right: none;

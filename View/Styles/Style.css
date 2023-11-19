@@ -1,7 +1,7 @@
 body {
     height: 100%;
     margin: 0;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia;
   }
   
   .center-screen {
@@ -28,7 +28,7 @@ body {
     width: 50%; 
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     border-radius: 5px;
   }
   
@@ -36,20 +36,20 @@ body {
     width: 10%; 
     padding: 10px;
     border: none;
-    background-color: #333;
-    color: white;
+    background-color: rgb(154, 172, 190);
+    color: rgb(0, 0, 0);
     margin-top: 10px;
     cursor: pointer;
     border-radius: 5px;
   }
   
   .signin-container button:hover {
-    background-color: #555;
+    background-color: rgb(154, 172, 190);
   }
   
   .forgot-password {
     margin-top: 15px;
-    color: #0000EE;
+    color: #7777c4;
     cursor: pointer;
     text-decoration: underline;
   }
@@ -77,9 +77,9 @@ body {
     cursor: pointer;
   }
   
-  .social-button.fb { background-color: #3b5998; color: white; }
-  .social-button.google { background-color: #db4437; color: white; }
-  .social-button.apple { background-color: #a6a6a6; color: white; }
+  .social-button.fb { background-color: rgb(154, 172, 190); color: rgb(0, 0, 0); }
+  .social-button.google { background-color: rgb(154, 172, 190); color: rgb(0, 0, 0); }
+  .social-button.apple { background-color: rgb(154, 172, 190); color: rgb(0, 0, 0); }
   
   .social-button:hover {
     opacity: 0.9;

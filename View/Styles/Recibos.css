@@ -9,18 +9,18 @@
     width: 100px; 
     height: 100px;
     border: 2px solid black; 
-    background-color: #fff; 
+    background-color: rgb(154, 172, 190); 
     cursor: pointer;
   }
   
   .square-button:hover {
-    background-color: #f1f1f1;/
+    background-color: rgb(154, 172, 190);/
   }
   .ventana {
     position: relative;
     width: 500px; 
     height: 250px; 
-    background-color: #fff; 
+    background-color: rgb(154, 172, 190); 
     border: 1px solid #000; 
     box-shadow: 10px 10px 7px rgba(0,0,0,0.5); 
     padding: 10px;
