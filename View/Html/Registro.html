@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Smart Locker</title>
-<link rel="stylesheet" href="../Styles/Style.css">
+<link rel="stylesheet" href="../Styles/Registro.css">
 </head>
 <body>
 
@@ -12,25 +13,39 @@
   <div class="title">SMART LOCKER</div>
 </div>
 <form action="menu.html">
-<div class="signin-container">
-  <input type="text" placeholder="Cedula" />
-  <input type="text" placeholder="Nombres" />
-  <input type="text" placeholder="Apellidos" />
-  <input type="text" placeholder="Torre" />
-  <input type="text" placeholder="Apartamento" />
-  <input type="password" placeholder="Password" />
-  <button type="submit">registro</button>
-  
-</div>
-</form>
-<div class="login-with">
-  <span class="with">WITH</span>
-  <div class="social-logins">
-    <img src="../Source/facebook-icon.webp" alt="google-icon" width="26" height="26">
-    <img src="../Source/apple-icon.png" alt="google-icon" width="28" height="28">
-    <img src="../Source/google2-icon.png" alt="google-icon" width="25" height="25">
+  <div class="signin-container">
+    <h1>Registro</h1>
+    <label for="cedula">Cedula:</label>
+    <input type="text" id="cedula" placeholder="Cedula" required />
+
+    <label for="nombres">Nombres:</label>
+    <input type="text" id="nombres" placeholder="Nombres" required />
+
+    <label for="apellidos">Apellidos:</label>
+    <input type="text" id="apellidos" placeholder="Apellidos" required />
+
+    <label for="torre">Torre:</label>
+    <input type="text" id="torre" placeholder="Torre" required />
+
+    <label for="apartamento">Apartamento:</label>
+    <input type="text" id="apartamento" placeholder="Apartamento" required />
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Password" required />
+
+    <button type="submit">Registro</button>
+
+    <div class="login-with">
+      <span class="with">or</span>
+      <div class="social-logins">
+        <img src="../Source/facebook-icon.webp" alt="facebook-icon" width="26" height="26">
+        <img src="../Source/apple-icon.png" alt="apple-icon" width="28" height="28">
+        <img src="../Source/google2-icon.png" alt="google-icon" width="25" height="25">
+      </div>
+    </div>
   </div>
-</div>
+</form>
 
 </body>
 </html>
+
